@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.admin import ModelAdmin as BaseModelAdmin
 from django.utils.translation import gettext as _
 
-from .models import User
+from .models import User, Tag
 
 
 class ModelAdmin(BaseModelAdmin):
@@ -26,3 +26,4 @@ class ModelAdmin(BaseModelAdmin):
 
 
 admin.site.register(User, ModelAdmin)
+admin.site.register(Tag)
